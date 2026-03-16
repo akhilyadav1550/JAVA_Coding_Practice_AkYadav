@@ -175,7 +175,6 @@ public class Main {
         System.out.println("EvenNumbers: "+evenNumbers);
         List<Integer> oddNumbers = PartionedByResult.get(false);
         System.out.println("OddNumbers: "+oddNumbers);
-        
-//        checking From STS-git 
+
     }
   }
