@@ -160,10 +160,10 @@ public class Main {
         System.out.println(resume);
 
 
-        List<String> checkFreqinput = Arrays.asList("apple", "banana", "apple", "cherry",
+        List<String> checkFreqInput = Arrays.asList("apple", "banana", "apple", "cherry",
                 "banana", "apple");
 
-        Map<String, Long> freqCheckResult = checkFreqinput.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+        Map<String, Long> freqCheckResult = checkFreqInput.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
 
         System.out.println(freqCheckResult);
     }
