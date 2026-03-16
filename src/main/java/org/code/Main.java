@@ -166,14 +166,14 @@ public class Main {
         System.out.println(freqCheckResult);
 
         List<Integer> checkPartitions = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
-        Map<Boolean, List<Integer>> PartionedByResult = checkPartitions
+        Map<Boolean, List<Integer>> PartitionedByResult = checkPartitions
                 .stream()
                 .collect(Collectors.partitioningBy(i -> i % 2 == 0));
 
         System.out.println("checkPartitions-Input :"+checkPartitions);
-        List<Integer> evenNumbers = PartionedByResult.get(true);
+        List<Integer> evenNumbers = PartitionedByResult.get(true);
         System.out.println("EvenNumbers: "+evenNumbers);
-        List<Integer> oddNumbers = PartionedByResult.get(false);
+        List<Integer> oddNumbers = PartitionedByResult.get(false);
         System.out.println("OddNumbers: "+oddNumbers);
 
     }
