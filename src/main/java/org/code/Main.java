@@ -162,9 +162,18 @@ public class Main {
 
         List<String> checkFreqInput = Arrays.asList("apple", "banana", "apple", "cherry",
                 "banana", "apple");
-
         Map<String, Long> freqCheckResult = checkFreqInput.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-
         System.out.println(freqCheckResult);
+
+        List<Integer> checkPartitions = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9);
+        Map<Boolean, List<Integer>> PartionedByResult = checkPartitions
+                .stream()
+                .collect(Collectors.partitioningBy(i -> i % 2 == 0));
+
+        System.out.println("checkPartitions-Input :"+checkPartitions);
+        List<Integer> evenNumbers = PartionedByResult.get(true);
+        System.out.println("EvenNumbers: "+evenNumbers);
+        List<Integer> oddNumbers = PartionedByResult.get(false);
+        System.out.println("OddNumbers: "+oddNumbers);
     }
   }
