@@ -152,12 +152,12 @@ public class Main {
         int[] array = {4, 2, 7, 1, 5, 3, 6};
         int k=3;
 
-        int resme = Arrays.stream(array)
+        int resume = Arrays.stream(array)
                 .sorted()
                 .skip(k - 1)
                 .findFirst()
                 .orElse(-1);
-        System.out.println(resme);
+        System.out.println(resume);
 
 
         List<String> checkFreqinput = Arrays.asList("apple", "banana", "apple", "cherry",
