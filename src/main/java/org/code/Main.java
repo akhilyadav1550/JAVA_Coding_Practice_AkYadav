@@ -176,6 +176,6 @@ public class Main {
         List<Integer> oddNumbers = PartionedByResult.get(false);
         System.out.println("OddNumbers: "+oddNumbers);
         
-//        checking From STS-git
+//        checking From STS-git 
     }
   }
